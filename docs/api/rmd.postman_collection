@@ -1,0 +1,645 @@
+{
+	"variables": [],
+	"info": {
+		"name": "rmd",
+		"_postman_id": "ff6caba9-d92a-1487-6b82-eafeb41c3575",
+		"description": "recruit-me-docs api collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"description": "authentication endpoints",
+			"item": [
+				{
+					"name": "localhost:3000/login",
+					"request": {
+						"url": "localhost:3000/login",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"chrislewispac@gmail.com\",\n    \"password\": \"mail1201\"\n}"
+						},
+						"description": "login"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/register",
+					"request": {
+						"url": "localhost:3000/register",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"chrislewispac@gmail.com\",\n    \"password\": \"mail1201\"\n}"
+						},
+						"description": "registration"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user_contacts",
+			"description": "",
+			"item": [
+				{
+					"name": "post contact csv data",
+					"request": {
+						"url": "localhost:3000/auth/contacts/csv",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6dHJ1ZSwiZXhwIjoxNDg5Nzg3MDIwLCJpZCI6MTB9.Y7P5rBu5y3XewJtNMPeoyyhnCdghBN260nsXk7ml5vA",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "last_contact_type",
+									"value": "hello",
+									"type": "text",
+									"enabled": false
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"enabled": false
+								}
+							]
+						},
+						"description": "post user contacts from csv input"
+					},
+					"response": []
+				},
+				{
+					"name": "add new contact",
+					"request": {
+						"url": "localhost:3000/auth/contact",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6dHJ1ZSwiZXhwIjoxNDg5Nzg3MDIwLCJpZCI6MTB9.Y7P5rBu5y3XewJtNMPeoyyhnCdghBN260nsXk7ml5vA",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "last_contact_type",
+									"value": "hello",
+									"type": "text",
+									"enabled": false
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"enabled": false
+								}
+							]
+						},
+						"description": "add user contact"
+					},
+					"response": []
+				},
+				{
+					"name": "get all contacts",
+					"request": {
+						"url": "localhost:3000/auth/contacts",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6dHJ1ZSwiZXhwIjoxNDg5Nzg3MDIwLCJpZCI6MTB9.Y7P5rBu5y3XewJtNMPeoyyhnCdghBN260nsXk7ml5vA",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "last_contact_type",
+									"value": "hello",
+									"type": "text",
+									"enabled": false
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"enabled": false
+								}
+							]
+						},
+						"description": "get user contacts"
+					},
+					"response": []
+				},
+				{
+					"name": "get contact by id",
+					"request": {
+						"url": "localhost:3000/auth/contact/1",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6dHJ1ZSwiZXhwIjoxNDg5Nzg3MDIwLCJpZCI6MTB9.Y7P5rBu5y3XewJtNMPeoyyhnCdghBN260nsXk7ml5vA",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "last_contact_type",
+									"value": "hello",
+									"type": "text",
+									"enabled": false
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"enabled": false
+								}
+							]
+						},
+						"description": "get user contact by id (be sure to require this go the user_contact table)"
+					},
+					"response": []
+				},
+				{
+					"name": "update contact",
+					"request": {
+						"url": "localhost:3000/auth/contact/update/1",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6dHJ1ZSwiZXhwIjoxNDg5Nzg3MDIwLCJpZCI6MTB9.Y7P5rBu5y3XewJtNMPeoyyhnCdghBN260nsXk7ml5vA",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "last_contact_type",
+									"value": "hello",
+									"type": "text",
+									"enabled": false
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"enabled": false
+								}
+							]
+						},
+						"description": "update contact by id"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user_contracts",
+			"description": "",
+			"item": [
+				{
+					"name": "post contract csv data",
+					"request": {
+						"url": "localhost:3000/auth/contracts/csv",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6dHJ1ZSwiZXhwIjoxNDg5Nzg3MDIwLCJpZCI6MTB9.Y7P5rBu5y3XewJtNMPeoyyhnCdghBN260nsXk7ml5vA",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "last_contact_type",
+									"value": "hello",
+									"type": "text",
+									"enabled": false
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"enabled": false
+								}
+							]
+						},
+						"description": "post user contacts from csv input"
+					},
+					"response": []
+				},
+				{
+					"name": "add new contract",
+					"request": {
+						"url": "localhost:3000/auth/contract",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6dHJ1ZSwiZXhwIjoxNDg5Nzg3MDIwLCJpZCI6MTB9.Y7P5rBu5y3XewJtNMPeoyyhnCdghBN260nsXk7ml5vA",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "last_contact_type",
+									"value": "hello",
+									"type": "text",
+									"enabled": false
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"enabled": false
+								}
+							]
+						},
+						"description": "add user contact"
+					},
+					"response": []
+				},
+				{
+					"name": "get all contracts",
+					"request": {
+						"url": "localhost:3000/auth/contracts",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6dHJ1ZSwiZXhwIjoxNDg5Nzg3MDIwLCJpZCI6MTB9.Y7P5rBu5y3XewJtNMPeoyyhnCdghBN260nsXk7ml5vA",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "last_contact_type",
+									"value": "hello",
+									"type": "text",
+									"enabled": false
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"enabled": false
+								}
+							]
+						},
+						"description": "get user contacts"
+					},
+					"response": []
+				},
+				{
+					"name": "get contract by id",
+					"request": {
+						"url": "localhost:3000/auth/contract/1",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6dHJ1ZSwiZXhwIjoxNDg5Nzg3MDIwLCJpZCI6MTB9.Y7P5rBu5y3XewJtNMPeoyyhnCdghBN260nsXk7ml5vA",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "last_contact_type",
+									"value": "hello",
+									"type": "text",
+									"enabled": false
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"enabled": false
+								}
+							]
+						},
+						"description": "get user contact by id (be sure to require this go the user_contact table)"
+					},
+					"response": []
+				},
+				{
+					"name": "update contract",
+					"request": {
+						"url": "localhost:3000/auth/contract/update/1",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6dHJ1ZSwiZXhwIjoxNDg5Nzg3MDIwLCJpZCI6MTB9.Y7P5rBu5y3XewJtNMPeoyyhnCdghBN260nsXk7ml5vA",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "last_contact_type",
+									"value": "hello",
+									"type": "text",
+									"enabled": false
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"enabled": false
+								}
+							]
+						},
+						"description": "update contact by id"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user_facilities",
+			"description": "",
+			"item": [
+				{
+					"name": "post facility csv data",
+					"request": {
+						"url": "localhost:3000/auth/facilities/csv",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6dHJ1ZSwiZXhwIjoxNDg5Nzg3MDIwLCJpZCI6MTB9.Y7P5rBu5y3XewJtNMPeoyyhnCdghBN260nsXk7ml5vA",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "last_contact_type",
+									"value": "hello",
+									"type": "text",
+									"enabled": false
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"enabled": false
+								}
+							]
+						},
+						"description": "post user contacts from csv input"
+					},
+					"response": []
+				},
+				{
+					"name": "add new facility",
+					"request": {
+						"url": "localhost:3000/auth/contract",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6dHJ1ZSwiZXhwIjoxNDg5Nzg3MDIwLCJpZCI6MTB9.Y7P5rBu5y3XewJtNMPeoyyhnCdghBN260nsXk7ml5vA",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "last_contact_type",
+									"value": "hello",
+									"type": "text",
+									"enabled": false
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"enabled": false
+								}
+							]
+						},
+						"description": "add user facility"
+					},
+					"response": []
+				},
+				{
+					"name": "get all facilities",
+					"request": {
+						"url": "localhost:3000/auth/contracts",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6dHJ1ZSwiZXhwIjoxNDg5Nzg3MDIwLCJpZCI6MTB9.Y7P5rBu5y3XewJtNMPeoyyhnCdghBN260nsXk7ml5vA",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "last_contact_type",
+									"value": "hello",
+									"type": "text",
+									"enabled": false
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"enabled": false
+								}
+							]
+						},
+						"description": "get user facilities"
+					},
+					"response": []
+				},
+				{
+					"name": "get facility by id",
+					"request": {
+						"url": "localhost:3000/auth/contact/1",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6dHJ1ZSwiZXhwIjoxNDg5Nzg3MDIwLCJpZCI6MTB9.Y7P5rBu5y3XewJtNMPeoyyhnCdghBN260nsXk7ml5vA",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "last_contact_type",
+									"value": "hello",
+									"type": "text",
+									"enabled": false
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"enabled": false
+								}
+							]
+						},
+						"description": "get user facility by id (be sure to require this go the user_facilities table)"
+					},
+					"response": []
+				},
+				{
+					"name": "update facility",
+					"request": {
+						"url": "localhost:3000/auth/facility/update/1",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6dHJ1ZSwiZXhwIjoxNDg5Nzg3MDIwLCJpZCI6MTB9.Y7P5rBu5y3XewJtNMPeoyyhnCdghBN260nsXk7ml5vA",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "last_contact_type",
+									"value": "hello",
+									"type": "text",
+									"enabled": false
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"enabled": false
+								}
+							]
+						},
+						"description": "update contact by id"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

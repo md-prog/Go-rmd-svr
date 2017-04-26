@@ -1,0 +1,5 @@
+.env
+*.yml
+*.production.yml
+vendor
+gin-bin
