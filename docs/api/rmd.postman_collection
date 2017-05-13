@@ -25,7 +25,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"email\": \"chrislewispac@gmail.com\",\n    \"password\": \"mail1201\"\n}"
+							"raw": "{\n    \"email\": \"chrislewispac+rmdtes@gmail.com\",\n    \"password\": \"mail1201\"\n}"
 						},
 						"description": "login"
 					},
@@ -45,7 +45,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"email\": \"chrislewispac@gmail.com\",\n    \"password\": \"mail1201\"\n}"
+							"raw": "{\n    \"email\": \"chrislewispac+rmdtes@gmail.com\",\n    \"password\": \"mail1201\"\n}"
 						},
 						"description": "registration"
 					},

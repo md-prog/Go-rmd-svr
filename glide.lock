@@ -1,12 +1,16 @@
-hash: 6149f2734a3cbef883b896ab4f9bad9b2344fce014cf94236199db58a3c02f86
-updated: 2017-04-01T00:01:49.034189597-04:00
+hash: 5d0decb9f2ae00f83e48b8375df5a4856c65d7d8058ab84f995104826815f42f
+updated: 2017-05-08T12:10:12.141437218-04:00
 imports:
 - name: github.com/BurntSushi/toml
-  version: e643e9ef00b049d75de26e61109c5ea01885cd21
+  version: b26d9c308763d68093482582cea63d69be07a0f0
+- name: github.com/certifi/gocertifi
+  version: 03be5e6bb9874570ea7fb0961225d193cbc374c5
 - name: github.com/dgrijalva/jwt-go
   version: d2709f9f1f31ebcda9651b03077758c1f3a0018c
 - name: github.com/fvbock/endless
   version: 447134032cb6a86814f570257390a379982dfc61
+- name: github.com/ginuerzh/weedo
+  version: 29309b93c3cfeff422566e29115867a7a71edb68
 - name: github.com/Jeffail/gabs
   version: 2a3aa15961d5fee6047b8151b67ac2f08ba2c48c
 - name: github.com/jinzhu/configor
@@ -17,7 +21,7 @@ imports:
   - reflectx
   - types
 - name: github.com/labstack/echo
-  version: 948d607539e92f3974d8f24951c8975d7342e24a
+  version: 1049c9613cd371b7ea8f219404c9a821734781ed
   subpackages:
   - middleware
 - name: github.com/labstack/gommon
@@ -35,14 +39,16 @@ imports:
   version: a392f450ea64cee2b268dfaacdc2502b50a22b18
 - name: github.com/mattn/go-isatty
   version: 57fdcb988a5c543893cc61bce354a6e24ab70022
-- name: github.com/otiai10/gosseract
-  version: df11bbf9be4cab849f76f63d03378047ac1fb2a0
+- name: github.com/pkg/errors
+  version: ff09b135c25aae272398c51a07235b90a75aa4f0
 - name: github.com/satori/go.uuid
   version: 879c5887cd475cd7864858769793b2ceb0d44feb
 - name: github.com/Sirupsen/logrus
   version: ba1b36c82c5e05c4f912a88eab0dcd91a171688f
 - name: github.com/SparkPost/gosparkpost
   version: 0e0b1fceddc798a2d71f6e42c83f88fae6e45774
+  subpackages:
+  - events
 - name: github.com/valyala/bytebufferpool
   version: e746df99fe4a3986f4d4f79e13c1e0117ce9c2f7
 - name: github.com/valyala/fasttemplate
@@ -55,7 +61,7 @@ imports:
   - bcrypt
   - blowfish
 - name: golang.org/x/net
-  version: a6577fac2d73be281a500b310739095313165611
+  version: f315505cf3349909cdf013ea56690da34e96a451
   subpackages:
   - context
   - context/ctxhttp
@@ -90,7 +96,7 @@ testImports:
   - internal/go-render/render
   - internal/oglematchers
 - name: github.com/smartystreets/goconvey
-  version: 3bd662eac601ad6436e64776af2e112069eb2edc
+  version: d4c757aa9afd1e2fc1832aaab209b5794eb336e1
   subpackages:
   - convey
   - convey/gotest

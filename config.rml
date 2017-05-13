@@ -1,0 +1,27 @@
+appname: StatRecruit
+
+db:
+  name:     rmd_dev
+  user:     chrislewispac
+  password: Mail1201!
+  host:     localhost
+
+redis:
+  addr:     localhost:6379
+  password: VyNDVsPddKKNN6l000Xwy4A6Ow2lpeO92q7ZFXnjQ13ZdOii8pEUwO0vIo0w
+
+env:
+  production: false
+  development: true
+  port: :3001
+
+sparkpost:
+  key: a3175c923d06b51244f7065d79fc9f97e097aeec
+
+intercom:
+  key: _VrdamuRgygvLLs5Zw5qCirZZ_n8WoLBKduwKG1y
+
+baseurl: http://localhost:8000
+
+seaweedfs:
+  masterurl: "localhost:9333"

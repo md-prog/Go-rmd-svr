@@ -1,0 +1,79 @@
+[
+  {
+    "msys": {
+      "relay_message": {
+        "content": {
+          "email_rfc822": "Return-Path: \u003cchrislewispac@gmail.com\u003e\nAuthentication-Results:  c.mta1vsmtp.cc.prd.sparkpost x-tls.subject=\"/C=US/ST=California/L=Mountain View/O=Google Inc/CN=smtp.gmail.com\"; auth=fail (cipher=ECDHE-RSA-AES128-GCM-SHA256)\nReceived: from [10.92.71.247] ([10.92.71.247:56577] helo=mail-yb0-f177.google.com)\n\tby c.mta1vsmtp.cc.prd.sparkpost (envelope-from \u003cchrislewispac@gmail.com\u003e)\n\t(ecelerity 4.2.31.59603 r(Core:4.2.31.0)) with ESMTPS (cipher=ECDHE-RSA-AES128-GCM-SHA256\n\tsubject=\"/C=US/ST=California/L=Mountain View/O=Google Inc/CN=smtp.gmail.com\") \n\tid 4E/DF-58456-CC001095; Wed, 26 Apr 2017 20:19:24 +0000\nReceived: by mail-yb0-f177.google.com with SMTP id s22so3145718ybe.3\n        for \u003ctest@inbox.statrecruit.com\u003e; Wed, 26 Apr 2017 13:19:24 -0700 (PDT)\nDKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\n        d=gmail.com; s=20161025;\n        h=from:content-transfer-encoding:mime-version:subject:message-id:date\n         :to;\n        bh=sIAi0xXPHrEtJmW97Q5q9AZTwKC+l1Iy+0m8vQIc/DY=;\n        b=MTsrpC2HVWv9IiYYbarXpbX7XyjCYJju9hn1F4ICq9G0oBtUOr/7HUH/vjt/DPN90H\n         8oby/U3pPnfI0K9J0SQ3Flc3iPny+Hy80gqmqDla2WFBAahDSDM4o5lHGDNT35GDkcEb\n         xyrK3jX5wh8xzeEUTyUJZT0KT2ottJ8OVljYAelTC7G6fwCs2Nzx1DZRWoCKV+1feIAF\n         h5y5IapOJBiQhujJGBaH7Op+RJlYKNpj/pQWb5xHorkceJ4Badl9U+hdFElrKHlFDdHT\n         xEkoZ5B5riP3jrLekeCn/fE23MhU1/b4PfQc+B7Gahu3mkBk10PBK/SS/cNpKfzk6PQD\n         xSNw==\nX-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\n        d=1e100.net; s=20161025;\n        h=x-gm-message-state:from:content-transfer-encoding:mime-version\n         :subject:message-id:date:to;\n        bh=sIAi0xXPHrEtJmW97Q5q9AZTwKC+l1Iy+0m8vQIc/DY=;\n        b=dH+E6o5vshcy3C2WY1gY7dOhqcTd7613oh50hpfyKjoDGONRWgGHGQAdS63drXPbNu\n         cCX6S9riOQkeTK+vgiTR+wSOa6r8Xk6mkMPibTzhNqCOR8ITxFLf5glNPB/V91ykzRkv\n         BlYuxkDPllf6BzHIFIbk4OIulqRRGt0nvOa2M8T6XC/CoYVUWqOeVOxhdRs/XeYakmgF\n         5S/mSzSl7suc3T88vc2iCbgDUzS+FJnd/Os37629iDZy+eYzZERnDlQwH4wChBYdPdvu\n         c6KwSLJIHSyu5KHxPduSu5ipQztZuf3GvoOCMbUQYgdMIlUCrj0oFYpsj0esPUVzJyZ7\n         onyA==\nX-Gm-Message-State: AN3rC/7a6YWOsSfHybff0VMqH1kTgaYF3lTqkW200BNYwYMibkyOh0Lw\n\tKVurVSpU4ZrRK0KIIPw=\nX-Received: by 10.37.234.72 with SMTP id o8mr1530553ybe.34.1493237963627;\n        Wed, 26 Apr 2017 13:19:23 -0700 (PDT)\nReceived: from [192.168.0.18] ([65.34.94.97])\n        by smtp.gmail.com with ESMTPSA id l17sm180950ywh.13.2017.04.26.13.19.22\n        for \u003ctest@inbox.statrecruit.com\u003e\n        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);\n        Wed, 26 Apr 2017 13:19:23 -0700 (PDT)\nFrom: Chris Lewis \u003cchrislewispac@gmail.com\u003e\nContent-Type: text/plain; charset=us-ascii\nContent-Transfer-Encoding: 7bit\nMime-Version: 1.0 (Mac OS X Mail 10.3 \\(3273\\))\nSubject: this file does not have an attachment\nMessage-Id: \u003c0D5FE402-66DB-413D-99EC-4D9975D1C90E@gmail.com\u003e\nDate: Wed, 26 Apr 2017 16:19:22 -0400\nTo: test@inbox.statrecruit.com\nX-Mailer: Apple Mail (2.3273)\n\nHello World\n\n",
+          "email_rfc822_is_base64": false,
+          "headers": [
+            {
+              "Return-Path": "\u003cchrislewispac@gmail.com\u003e"
+            },
+            {
+              "Authentication-Results": "c.mta1vsmtp.cc.prd.sparkpost x-tls.subject=\"/C=US/ST=California/L=Mountain View/O=Google Inc/CN=smtp.gmail.com\"; auth=fail (cipher=ECDHE-RSA-AES128-GCM-SHA256)"
+            },
+            {
+              "Received": "from [10.92.71.247] ([10.92.71.247:56577] helo=mail-yb0-f177.google.com) by c.mta1vsmtp.cc.prd.sparkpost (envelope-from \u003cchrislewispac@gmail.com\u003e) (ecelerity 4.2.31.59603 r(Core:4.2.31.0)) with ESMTPS (cipher=ECDHE-RSA-AES128-GCM-SHA256 subject=\"/C=US/ST=California/L=Mountain View/O=Google Inc/CN=smtp.gmail.com\")  id 4E/DF-58456-CC001095; Wed, 26 Apr 2017 20:19:24 +0000"
+            },
+            {
+              "Received": "by mail-yb0-f177.google.com with SMTP id s22so3145718ybe.3 for \u003ctest@inbox.statrecruit.com\u003e; Wed, 26 Apr 2017 13:19:24 -0700 (PDT)"
+            },
+            {
+              "DKIM-Signature": "v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20161025; h=from:content-transfer-encoding:mime-version:subject:message-id:date :to; bh=sIAi0xXPHrEtJmW97Q5q9AZTwKC+l1Iy+0m8vQIc/DY=; b=MTsrpC2HVWv9IiYYbarXpbX7XyjCYJju9hn1F4ICq9G0oBtUOr/7HUH/vjt/DPN90H 8oby/U3pPnfI0K9J0SQ3Flc3iPny+Hy80gqmqDla2WFBAahDSDM4o5lHGDNT35GDkcEb xyrK3jX5wh8xzeEUTyUJZT0KT2ottJ8OVljYAelTC7G6fwCs2Nzx1DZRWoCKV+1feIAF h5y5IapOJBiQhujJGBaH7Op+RJlYKNpj/pQWb5xHorkceJ4Badl9U+hdFElrKHlFDdHT xEkoZ5B5riP3jrLekeCn/fE23MhU1/b4PfQc+B7Gahu3mkBk10PBK/SS/cNpKfzk6PQD xSNw=="
+            },
+            {
+              "X-Google-DKIM-Signature": "v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20161025; h=x-gm-message-state:from:content-transfer-encoding:mime-version :subject:message-id:date:to; bh=sIAi0xXPHrEtJmW97Q5q9AZTwKC+l1Iy+0m8vQIc/DY=; b=dH+E6o5vshcy3C2WY1gY7dOhqcTd7613oh50hpfyKjoDGONRWgGHGQAdS63drXPbNu cCX6S9riOQkeTK+vgiTR+wSOa6r8Xk6mkMPibTzhNqCOR8ITxFLf5glNPB/V91ykzRkv BlYuxkDPllf6BzHIFIbk4OIulqRRGt0nvOa2M8T6XC/CoYVUWqOeVOxhdRs/XeYakmgF 5S/mSzSl7suc3T88vc2iCbgDUzS+FJnd/Os37629iDZy+eYzZERnDlQwH4wChBYdPdvu c6KwSLJIHSyu5KHxPduSu5ipQztZuf3GvoOCMbUQYgdMIlUCrj0oFYpsj0esPUVzJyZ7 onyA=="
+            },
+            {
+              "X-Gm-Message-State": "AN3rC/7a6YWOsSfHybff0VMqH1kTgaYF3lTqkW200BNYwYMibkyOh0Lw KVurVSpU4ZrRK0KIIPw="
+            },
+            {
+              "X-Received": "by 10.37.234.72 with SMTP id o8mr1530553ybe.34.1493237963627; Wed, 26 Apr 2017 13:19:23 -0700 (PDT)"
+            },
+            {
+              "Received": "from [192.168.0.18] ([65.34.94.97]) by smtp.gmail.com with ESMTPSA id l17sm180950ywh.13.2017.04.26.13.19.22 for \u003ctest@inbox.statrecruit.com\u003e (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128); Wed, 26 Apr 2017 13:19:23 -0700 (PDT)"
+            },
+            {
+              "From": "Chris Lewis \u003cchrislewispac@gmail.com\u003e"
+            },
+            {
+              "Content-Type": "text/plain; charset=us-ascii"
+            },
+            {
+              "Content-Transfer-Encoding": "7bit"
+            },
+            {
+              "Mime-Version": "1.0 (Mac OS X Mail 10.3 \\(3273\\))"
+            },
+            {
+              "Subject": "this file does not have an attachment"
+            },
+            {
+              "Message-Id": "\u003c0D5FE402-66DB-413D-99EC-4D9975D1C90E@gmail.com\u003e"
+            },
+            {
+              "Date": "Wed, 26 Apr 2017 16:19:22 -0400"
+            },
+            {
+              "To": "test@inbox.statrecruit.com"
+            },
+            {
+              "X-Mailer": "Apple Mail (2.3273)"
+            }
+          ],
+          "subject": "this file does not have an attachment",
+          "text": "Hello World\r\n\r\n",
+          "to": [
+            "doesnotexistatallnochanceinhell@inbox.statrecruit.com"
+          ]
+        },
+        "customer_id": "138795",
+        "friendly_from": "chrislewispac@gmail.com",
+        "msg_from": "chrislewispac@gmail.com",
+        "protocol": "smtp",
+        "rcpt_to": "doesnotexistatallnochanceinhell@inbox.statrecruit.com",
+        "webhook_id": "102588097607327767"
+      }
+    }
+  }
+]

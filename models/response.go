@@ -14,7 +14,6 @@ type Response struct {
 
 type Res struct {
 	Msg   string         `json:"msg"`
-	Token string         `json:"token"`
 	Uuid  string         `json:"uuid"`
 	Error null.String    `json:"error"`
 	Data  types.JSONText `json:"data"`

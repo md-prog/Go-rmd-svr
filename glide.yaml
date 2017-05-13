@@ -1,19 +1,22 @@
-package: github.com/chrislewispac/recruit-me-docs/server
+package: gitlab.com/chrislewispac/rmd-server
 import:
 - package: github.com/Jeffail/gabs
   version: ^1.0.0
 - package: github.com/Sirupsen/logrus
   version: ^0.11.5
+- package: github.com/SparkPost/gosparkpost
 - package: github.com/dgrijalva/jwt-go
   version: ^3.0.0
 - package: github.com/fvbock/endless
+- package: github.com/ginuerzh/weedo
+  version: ^0.4.0
 - package: github.com/jinzhu/configor
 - package: github.com/jmoiron/sqlx
   subpackages:
   - reflectx
   - types
 - package: github.com/labstack/echo
-  version: ^3.1.0-rc.1
+  version: ^3.1.0
   subpackages:
   - middleware
 - package: github.com/lib/pq
@@ -28,5 +31,8 @@ import:
   - zero
 - package: gopkg.in/redis.v5
   version: ^5.2.9
-- package: github.com/SparkPost/gosparkpost
-- package: github.com/otiai10/gosseract
+testImport:
+- package: github.com/smartystreets/goconvey
+  version: ^1.6.2
+  subpackages:
+  - convey

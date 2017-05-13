@@ -9,20 +9,21 @@ import (
 
 //Contract move this later
 type Contract struct {
-	ID                    string         `json:"id" form:"id" query:"id"`
-	UsersContractsID      string         `json:"user_contracts_id" form:"user_contracts_id" query:"user_contracts_id"`
-	Name                  string         `json:"name" form:"name" query:"name"`
-	UpdatedAt             time.Time      `json:"updated_at" form:"updated_at" query:"updated_at"`
-	EvergreenClause       null.Bool      `json:"evergreen_clause" form:"evergreen_clause" query:"evergreen_clause"`
-	RenewalDate           null.Time      `json:"renewal_date" form:"renewal_date" query:"renewal_date"`
-	StartDate             null.Time      `json:"start_date" form:"start_date" query:"start_date"`
-	LeadSourceID          null.Int       `json:"lead_source_id" form:"lead_source_id" query:"lead_source_id"`
-	LastContactID         null.Int       `json:"last_contact_id" form:"last_contact_id" query:"last_contact_id"`
-	File                  null.String    `json:"file" form:"file" query:"file"`
-	Facilities            types.JSONText `json:"facilities" form:"facilities" query:"facilities"`
-	Contacts              types.JSONText `json:"contacts" form:"contacts" query:"contacts"`
-	StatusChanges         types.JSONText `json:"status_changes" form:"status_changes" query:"status_changes"`
-	CurrentContractStatus string         `json:"current_contract_status" form:"current_contract_status" query:"current_contract_status"`
+	ID               string      `json:"id" form:"id" query:"id"`
+	UsersContractsID string      `json:"user_contracts_id" form:"user_contracts_id" query:"user_contracts_id"`
+	Name             string      `json:"name" form:"name" query:"name"`
+	UpdatedAt        time.Time   `json:"updated_at" form:"updated_at" query:"updated_at"`
+	EvergreenClause  null.Bool   `json:"evergreen_clause" form:"evergreen_clause" query:"evergreen_clause"`
+	RenewalDate      null.Time   `json:"renewal_date" form:"renewal_date" query:"renewal_date"`
+	StartDate        null.Time   `json:"start_date" form:"start_date" query:"start_date"`
+	LeadSourceID     null.Int    `json:"lead_source_id" form:"lead_source_id" query:"lead_source_id"`
+	LastContactID    null.Int    `json:"last_contact_id" form:"last_contact_id" query:"last_contact_id"`
+	File             null.String `json:"file" form:"file" query:"file"`
+	// List of facility Ids
+	Facilities            types.NullJSONText `json:"facilities" form:"facilities" query:"facilities"`
+	Contacts              types.NullJSONText `json:"contacts" form:"contacts" query:"contacts"`
+	StatusChanges         types.NullJSONText `json:"status_changes" form:"status_changes" query:"status_changes"`
+	CurrentContractStatus string             `json:"current_contract_status" form:"current_contract_status" query:"current_contract_status"`
 }
 
 //ContractStatus move this later
